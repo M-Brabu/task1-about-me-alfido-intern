@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-Me</title>
+    <style>
+        body{
+            padding: 20px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            animation-name: bc;
+            animation-duration: 30s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            font-size: medium;
+        }
+        @keyframes bc{
+            0%{
+                 background:linear-gradient(180deg,red,blue);
+            }
+            10%{
+                background:linear-gradient(25deg,red,blue);
+            }
+            20%{
+                 background:linear-gradient(50deg,red,blue);
+            }
+            30%{
+                 background:linear-gradient(70deg,red,blue);
+            }
+            40%{
+                 background:linear-gradient(100deg,red,blue);
+            }
+            50%{
+                 background:linear-gradient(150deg,red,blue);
+            }
+            60%{
+                 background:linear-gradient(100deg,red,blue);
+            }
+            70%{
+                 background:linear-gradient(70deg,red,blue);
+            }
+             80%{
+                 background:linear-gradient(50deg,red,blue);
+            }
+             90%{
+                 background:linear-gradient(25deg,red,blue);
+            }
+             100%{
+                 background:linear-gradient(0deg,red,blue);
+            }
+            
+        }
+        #img-name{
+            margin-top:70px ;
+            border-style:ridge;
+            border-radius: 25px;
+            color: white;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #about-me{
+            border-radius: 10px;
+            border-style: ridge;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin:10px;
+            color: white;
+        }
+        #image{
+             border-radius: 50%;
+             border-style: ridge;
+             height:200px;
+             padding:10px;
+             margin: 10px;
+        }
+        #contact{
+            color: white;
+            border-style:ridge;
+            border-radius: 25px;
+            margin: 10px;
+            padding: 10px;
+            overflow-x: auto;  
+        }
+        .pl{
+            text-decoration: none;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+        }
+        .pl:hover{
+            background-color: gold;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+         }
+
+        #port{
+            background-color: chocolate;
+            height:100px;
+            width: 100px;
+            color:white;
+            margin:auto;
+            border-radius: 10px;
+            padding: 50px;
+            animation-name: portfolio;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @keyframes portfolio{
+            0%{
+             rotate: 0deg;
+            }
+            50%{
+              rotate:180 deg;
+              transform:scale(1.1);
+              background-color: cadetblue;
+              border-radius: 100%;
+            }
+            100%{
+               rotate: 360deg;
+               
+            }
+        }
+        .glass{
+            backdrop-filter: blur(10px);
+            background-color:rgba(255, 255, 255,0.3);
+        }
+        .h1titles{
+            background-color: yellow;
+            border-radius: 10px;
+            animation-name: h1titles;
+            animation-timing-function: ease;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            color: black;
+        }
+        @keyframes h1titles {
+            0%{
+                 width: 35%;
+            }
+            50%{
+                width: 60%;
+            }
+            100%{
+                width: 35%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="port">
+        portfolio
+    </div>
+    <div id="img-name"  class="glass">
+        <img id="image"  src="brabu-ghibili.jpeg">
+        <h1 id="name" >Brabu M</h1>
+    </div>
+    <div id="about-me"  class="glass">
+       <h1 class="h1titles">About Me</h1>
+Hey there! I'm an aspiring Front-End Developer with a growing passion for crafting clean, responsive, and engaging websites. My coding toolkit includes HTML, CSS, JavaScript, and Bootstrap — and I’ve loved using them to build projects that solve real problems and spark curiosity.
+Learning by doing is my favorite approach. So far, I've created:<br>
+- 🧮 A Calculator app to crunch numbers with style<br> 
+- ⛅ A Weather app that shows temperature,humidity,weather description<br>  
+- 📝 A To-Do List to help stay organized<br>  
+- 🔢 A “Guess the Number” game for some playful logic<br>
+- 🍲 A cozy Recipe site to share delicious ideas<br>
+Each project has taught me something new and pushed me one step closer to becoming the kind of developer I aim to be — thoughtful, creative, and always improving. I'm excited to keep learning, tackle more ambitious builds, and collaborate with others who love tech as much as I do
+    </div>
+    <div id="contact"  class="glass">
+        <h1 class="h1titles">contact:</h1>
+        <h3>Email:brabumurugan18@gmail.com</h3>
+        <h3>Linkedin:<a href="https://www.linkedin.com/in/brabu-murugan-a7a15b297?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BznComRlmRoOFk9PNZMcEtA%3D%3D" style="text-decoration: none;cursor: pointer; color:white;">Brabu@linkedin</a></h3>
+        </div>
+</body>
+</html>
